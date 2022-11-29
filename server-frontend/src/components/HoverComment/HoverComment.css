@@ -1,0 +1,63 @@
+/* HoverComment.tsx */
+
+.hover-comment-container {
+    background-color: #3D9895;
+    border-radius: 0.5em;
+    color: #FFFFFF;
+    padding: 1em;
+    font-size: 1,1em;
+}
+
+.hover-comment-metadata {
+    display: flex;
+    flex-direction: row;
+}
+
+.hover-comment-timestamp {
+    margin-left: auto;
+    margin-top: -0.5em;
+    display: none;
+}
+
+.hover-comment-content {
+    margin: auto;
+    text-align: center;
+    width: 80%;
+}
+
+.hover-comment-profile {
+    flex-basis: 100%;
+    display: none;
+}
+
+@media screen and (max-width: 790px){
+
+    .hover-comment-container {
+        width: 30vw;
+    }
+
+    .hover-comment-profile .profile-container-sender {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hover-comment-profile .profile-image {
+        border-radius: 5em;
+        height: none;
+        margin: auto;
+        position: relative;
+        left: 0.5em;
+    }
+
+    .hover-comment-profile .profile-name-sender {
+        position: relative;
+        top: 0.1em;
+        flex-basis: 100%;
+        /* padding-left: 1em; */
+    }
+
+    .hover-comment-timestamp {
+        display: none;
+    }
+
+}

@@ -1,0 +1,106 @@
+.landing-page-supercontainer{
+    position: relative;
+    height: 100vh;
+}
+
+.landing-page-container {
+    font-family: "Avenir LT";
+    color: #6D6E71;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+}
+
+#landing-page-logo{
+    margin: 0px auto;
+    padding: 10px 10px 10px 10px;
+    width: 19em;
+    position: relative;
+    top: 3em;
+}
+
+#landing-page-form-container{
+    margin: 0px auto;
+    padding: 10px 10px 10px 10px;
+}
+
+.landing-page-radio-container, .landing-page-radio-container-selected {
+    margin-top: 2em;
+    display: inline-block;
+    font-size: 0.8em;
+    padding: 1em;
+    width: 15em;
+}
+
+.landing-page-radio-container {
+    color: lightgrey;
+}
+
+.landing-page-radio-container-selected {
+    border-bottom: 2pt #F7941D solid;
+}
+
+.landing-page-radio-container input[type="radio"], .landing-page-radio-container-selected input[type="radio"] {
+    display: none;
+}
+
+.landing-page-text-input, .landing-page-phone-input input {
+    font-family: "Avenir LT";
+    font-weight: bold;
+    font-size: 1em;
+    outline: none;
+    background-color: #e6e7e8;
+    transition: 0.3s;
+    border: 0px;
+    padding-top: 0.4em;
+    padding-left: 2em;
+    margin: 0.3em;
+    width: 25em;
+    height: 3em;
+    flex: none;
+    color: #6d6e71;
+}
+
+.landing-page-text-input::placeholder, .landing-page-phone-input input::placeholder {
+    color: #BCBEC0;
+}
+
+/* .landing-page-text-input:focus, .landing-page-phone-input input:focus {
+    transition: 0.3s;
+    border-color: darkorange;
+} */
+
+.landing-page-label {
+    font-size: 1.5em;
+}
+
+.landing-page-button{
+    margin-top: 1em;
+    padding: 0.25em;
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+    font-size: 1.3em;
+}
+
+.landing-page-phone-input-container {
+    display: inline-block;
+    margin-right: 2.45em;
+}
+
+.landing-page-phone-input-container.landing-page-error {
+    border: none;
+}
+
+.landing-page-error, .landing-page-phone-input-container.landing-page-error input {
+    transition: 0.3s;
+    border-right: 2pt solid red;
+}
+
+.landing-page-container ul {
+    text-align: left;
+    list-style-type: none;
+    padding: 0;
+}

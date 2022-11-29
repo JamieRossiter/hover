@@ -1,0 +1,58 @@
+/* Button.tsx */
+
+.button-container button {
+    font-size: 1.2em;
+    height: 2.2em;
+    border: 0px;
+    border-radius: 0.5em;
+    font-family: "Avenir LT";
+}
+
+.button-container button:hover {
+    cursor: pointer;
+}
+
+.button-positive-button {
+    width: 5em;
+    transition: 0.3s;
+    background-color: #FCB040;
+} 
+
+.button-login-button {
+    background-color: transparent;
+    font-weight: bold;
+    font-size: 0.9em !important;
+    border-radius: 0em !important; 
+    transition: 0.3s;
+    color: #6D6E71;
+    border-bottom: 2pt #F7941D solid !important;
+}
+
+.button-login-button:disabled {
+    color: lightgrey;
+    border-bottom-color: lightgrey !important;
+}
+
+.button-login-button:enabled:hover {
+    transition: 0.3s;
+    border-bottom-color: white !important;
+}
+
+.button-positive-button:hover {
+    transition: 0.3s;
+    background-color: #fac578;
+}
+
+.button-negative-button {
+    width: 10em;
+    transition: 0.3s;
+    background-color: #FCB040;
+    color: #FFFFFF;
+}
+
+.button-negative-button:hover {
+    transition: 0.3s;
+    background-color: #FFFFFF;
+    outline: 1px solid #FCB040;
+    color: #FCB040;
+}

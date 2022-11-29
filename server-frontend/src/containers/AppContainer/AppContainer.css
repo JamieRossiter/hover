@@ -1,0 +1,22 @@
+/* AppContainer.tsx */
+
+@font-face {
+    font-family: "Avenir LT";
+    src: local("Avenir LT"), url(./fonts/avenir_lt/AvenirLTStd-Medium.otf) format("opentype");
+}
+
+@font-face {
+    font-family: "Avenir LT";
+    font-weight: bold;
+    src: local("Avenir LT"), url(./fonts/avenir_lt//AvenirLTStd-Heavy.otf) format("opentype");
+}
+
+@font-face {
+    font-family: "Avenir LT";
+    font-weight: lighter;
+    src: local("Avenir LT"), url(./fonts/avenir_lt/AvenirLTStd-Light.otf) format("opentype");
+}
+
+body {
+    font-family: "Avenir LT";
+}

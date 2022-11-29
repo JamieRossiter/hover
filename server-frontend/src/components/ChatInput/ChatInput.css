@@ -1,0 +1,11 @@
+/* ChatInput.tsx */
+
+.chat-input-text-input {
+    font-size: 1.2em;
+    border-radius: 10px;
+    border-color: lightgrey;
+    border-style: solid;
+    padding: 0.5em;
+    font-family: "Avenir LT";
+}
+

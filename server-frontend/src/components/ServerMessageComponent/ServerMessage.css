@@ -1,0 +1,7 @@
+/* ServerMessage.tsx */
+
+.server-message-text {
+    color: darkgrey;
+    text-align: center;
+    font-size: 1.1em;
+}

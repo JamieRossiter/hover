@@ -1,0 +1,21 @@
+.therapeutic-model-header {
+    background-color: #FCB040;
+}
+
+.therapeutic-model-header img {
+    width: 10%;
+    padding: 2em;
+}
+
+.therapeutic-model-container {
+    font-family: sans-serif;
+    padding-left: 2em;
+}
+
+.therapeutic-model-container h2 {
+    margin-bottom: 10px;
+}
+
+.therapeutic-model-container ul {
+    margin-top: 0px;
+}

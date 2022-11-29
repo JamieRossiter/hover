@@ -1,0 +1,47 @@
+.chat-message-content-container {
+    border-radius: 1em;
+    padding: 0.3em 0.8em 0.3em 0.8em;
+    display: inline-block;
+    position: relative;
+    font-size: 1.1em;
+    max-width: 770px;
+}
+
+.chat-message-content-profile-container {
+    display: inline-flex;
+}
+
+.chat-message-container.chat-role-sender .chat-message-content-profile-container {
+    flex-direction: row-reverse;
+}
+
+.chat-message-container.chat-role-sender .chat-message-content-container {
+    background-color: #2A2760;
+    color: #FFFFFF;
+}
+
+.chat-message-container.chat-role-receiver .chat-message-content-container {
+    background-color: #E6E7E8;
+    color: #6D6E71;
+}
+
+.chat-message-container.chat-role-sender {
+    text-align: right;
+}
+
+.chat-message-container.chat-role-receiver {
+    text-align: left;
+}
+
+.chat-message-timestamp-container {
+    position: relative;
+    bottom: 0.5em;
+}
+
+.chat-message-container.chat-role-receiver .chat-message-timestamp-container {
+    left: 5em;
+}
+
+.chat-message-container.chat-role-sender .chat-message-timestamp-container {
+    right: 5em;
+}

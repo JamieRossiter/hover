@@ -1,0 +1,18 @@
+author, role, dateSent, message, hoverComment, anxietyScore, depressionScore, riskFlag
+Jamie, patient, 2022-11-11T05:44:38.133Z, depressed, , 0.5, 2, false
+Jamie, patient, 2022-11-11T05:44:39.163Z, depressed, , 0.5, 2, false
+Jamie, patient, 2022-11-11T05:44:39.971Z, depressed, , 0.5, 2, false
+Jamie, patient, 2022-11-11T05:44:40.621Z, depressed, , 0.5, 2, false
+Jamie, patient, 2022-11-11T05:44:41.303Z, depressed, , 0.5, 2, false
+Jamie, patient, 2022-11-11T05:44:41.848Z, depressed, Client appears to be experiencing Mild levels of anxiety and Very High levels of depression. Consider utilising  <a target="_blank" href=/therapeuticModel/cbt>CBT</a> to assist., 0.5, 2, false
+Jamie, patient, 2022-11-11T05:44:42.410Z, depressed, , 0.5, 2, false
+Jamie, patient, 2022-11-11T05:44:43.037Z, depressed, , 0.5, 2, false
+Jamie, patient, 2022-11-11T05:44:43.606Z, depressed, , 0.5, 2, false
+Jamie, patient, 2022-11-11T05:45:08.120Z, depressed, , 0.5, 2, false
+Jamie, patient, 2022-11-11T05:45:09.638Z,     console.log(chatMessageContent.hover.comment);, Patient repeated the term "  " 2 times. Patient wrote message with 50% correctness. Client may be showing signs of intoxication and/or depression, 0, 0, false
+Jamie, patient, 2022-11-11T05:45:11.743Z,     console.log(chatMessageContent.hover.comment);, Patient repeated the term "  " 2 times. Patient wrote message with 50% correctness. Client may be showing signs of intoxication and/or depression, 0, 0, false
+Jamie, patient, 2022-11-11T05:45:14.801Z, depressed, , 0.5, 2, false
+Jamie, patient, 2022-11-11T05:45:19.887Z, depressed, , 0.5, 2, false
+Jamie, patient, 2022-11-11T05:45:21.011Z, depressed, , 0.5, 2, false
+Jamie, patient, 2022-11-11T05:45:21.922Z, depressed, Client appears to be experiencing Mild levels of anxiety and Very High levels of depression. Consider utilising  <a target="_blank" href=/therapeuticModel/cbt>CBT</a> to assist., 0.5, 2, false
+Jamie, patient, 2022-11-11T05:45:22.754Z, depressed, , 0.5, 2, false

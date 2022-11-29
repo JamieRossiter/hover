@@ -1,0 +1,11 @@
+author, role, dateSent, message, hoverComment, anxietyScore, depressionScore, riskFlag
+Jamie, patient, 2022-11-10T09:34:33.069Z, test, Client appears to be experiencing  levels of depression. Consider utilising NT to assist. <a target="_blank" href=/therapeuticModel/nt>NT</a>., 0, 0, false
+Jamie, patient, 2022-11-10T09:34:35.721Z, test, Client appears to be experiencing  levels of depression. Consider utilising NT to assist. <a target="_blank" href=/therapeuticModel/nt>NT</a>., 0, 0, false
+Jamie, patient, 2022-11-10T09:34:55.332Z, test, Client appears to be experiencing  levels of depression. Consider utilising NT to assist. <a target="_blank" href=/therapeuticModel/nt>NT</a>., 0, 0, false
+Jamie, patient, 2022-11-10T09:34:57.483Z, test, Client appears to be experiencing  levels of depression. Consider utilising NT to assist. <a target="_blank" href=/therapeuticModel/nt>NT</a>., 0, 0, false
+Jamie, patient, 2022-11-10T09:34:59.509Z, test, Client appears to be experiencing  levels of depression. Consider utilising NT to assist. <a target="_blank" href=/therapeuticModel/nt>NT</a>., 0, 0, false
+Jamie, patient, 2022-11-10T09:35:00.957Z, test, Client appears to be experiencing  levels of depression. Consider utilising NT to assist. <a target="_blank" href=/therapeuticModel/nt>NT</a>., 0, 0, false
+Jamie, patient, 2022-11-10T09:35:02.827Z, depressed, Client appears to be experiencing  levels of depression. Consider utilising NT to assist. <a target="_blank" href=/therapeuticModel/nt>NT</a>., 0.5, 2, false
+Jamie, patient, 2022-11-10T09:35:06.407Z, depressed, Client appears to be experiencing Mild levels of depression. Consider utilising NT to assist. <a target="_blank" href=/therapeuticModel/nt>NT</a>., 0.5, 2, false
+Jamie, patient, 2022-11-10T09:35:09.842Z, depressed, Client appears to be experiencing Medium levels of depression. Consider utilising NT to assist. <a target="_blank" href=/therapeuticModel/nt>NT</a>., 0.5, 2, false
+Jamie, patient, 2022-11-10T09:35:16.985Z, depressed, Client appears to be experiencing Medium levels of depression. Consider utilising CBT to assist. <a target="_blank" href=/therapeuticModel/cbt>CBT</a>., 0.5, 2, false

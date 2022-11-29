@@ -1,0 +1,23 @@
+/* ChatMessageContent.tsx */
+
+.chat-message-content-highlight-depression, .chat-message-content-highlight-anxiety, .chat-message-content-highlight-risk {
+    cursor: pointer;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.chat-message-content-highlight-depression, .chat-message-content-highlight-risk, .chat-message-content-highlight-anxiety {
+    font-weight: bold;
+}
+
+.chat-message-content-highlight-depression{
+    color: #006CA2;
+}
+
+.chat-message-content-highlight-risk{
+    color: #8D0B0E;
+}
+
+.chat-message-content-highlight-anxiety{
+    color: #BEAA10;
+}

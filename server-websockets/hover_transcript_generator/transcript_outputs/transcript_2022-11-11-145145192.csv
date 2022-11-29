@@ -1,0 +1,19 @@
+author, role, dateSent, message, hoverComment, anxietyScore, depressionScore, riskFlag
+Jamie, patient, 2022-11-11T03:47:14.388Z, test, , 0, 0, false
+Jamie, patient, 2022-11-11T03:47:18.414Z, test, , 0, 0, false
+Jamie, patient, 2022-11-11T03:47:25.099Z, test, , 0, 0, false
+Jamie, patient, 2022-11-11T03:47:26.737Z, test, , 0, 0, false
+Jamie, patient, 2022-11-11T03:47:28.251Z, test, , 0, 0, false
+Jamie, patient, 2022-11-11T03:47:29.709Z, test, , 0, 0, false
+Jamie, patient, 2022-11-11T03:47:30.896Z, test, , 0, 0, false
+Jamie, patient, 2022-11-11T03:47:31.999Z, test, , 0, 0, false
+Jamie, patient, 2022-11-11T03:47:33.200Z, test, , 0, 0, false
+Jamie, patient, 2022-11-11T03:47:34.362Z, test, , 0, 0, false
+Jamie, patient, 2022-11-11T03:47:35.669Z, test, Client appears to be experiencing  levels of depression. Consider utilising NT to assist. <a target="_blank" href=/therapeuticModel/nt>NT</a>., 0, 0, false
+Jamie, patient, 2022-11-11T03:50:59.995Z, depressed, Client appears to be experiencing  levels of depression. Consider utilising NT to assist. <a target="_blank" href=/therapeuticModel/nt>NT</a>., 0.5, 2, false
+Jamie, patient, 2022-11-11T03:51:03.145Z, depressed, Client appears to be experiencing Mild levels of depression. Consider utilising NT to assist. <a target="_blank" href=/therapeuticModel/nt>NT</a>., 0.5, 2, false
+Jamie, patient, 2022-11-11T03:51:07.462Z, depressed, Client appears to be experiencing Mild levels of depression. Consider utilising NT to assist. <a target="_blank" href=/therapeuticModel/nt>NT</a>., 0.5, 2, false
+Jamie, patient, 2022-11-11T03:51:10.562Z, depressed, Client appears to be experiencing Mild levels of depression. Consider utilising NT to assist. <a target="_blank" href=/therapeuticModel/nt>NT</a>., 0.5, 2, false
+Jamie, patient, 2022-11-11T03:51:16.198Z, depressed, Client appears to be experiencing Medium levels of depression. Consider utilising NT to assist. <a target="_blank" href=/therapeuticModel/nt>NT</a>., 0.5, 2, false
+Jamie, patient, 2022-11-11T03:51:24.076Z, depressed, Client appears to be experiencing Medium levels of depression. Consider utilising CBT to assist. <a target="_blank" href=/therapeuticModel/cbt>CBT</a>., 0.5, 2, false
+Jamie, patient, 2022-11-11T03:51:33.042Z, depressed, Client appears to be experiencing Medium levels of depression. Consider utilising CBT to assist. <a target="_blank" href=/therapeuticModel/cbt>CBT</a>., 0.5, 2, false

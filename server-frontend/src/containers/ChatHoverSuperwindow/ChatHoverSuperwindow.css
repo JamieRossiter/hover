@@ -1,0 +1,49 @@
+/* ChatHoverSuperWindow.tsx */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.chat-hover-superwindow-container {
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-left: 90px;
+    margin-right: 90px;
+}
+
+.chat-hover-superwindow-messagewall-container {
+    height: 75%;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column-reverse;
+    /* width: 100vw; */
+    /* margin: auto; */
+    background-color: #F8F8F9;
+    padding-top: 1em;
+}
+
+.chat-hover-superwindow-chatbar-container {
+    margin-bottom: 1em;
+}
+
+.chat-hover-superwindow-scrolltostart-container {
+    position: relative;
+    margin: auto;
+    bottom: 2em;
+}
+
+@media screen and (max-width: 790px){
+    .chat-hover-superwindow-messagewall-container {
+        width: 90vw;
+    }
+}
+

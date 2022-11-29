@@ -1,0 +1,19 @@
+/* PopupMessage.tsx */
+
+.popup-message-container {
+    border-radius: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+}
+
+.popup-message-container.popup-message-positive {
+    background-color: lightgreen;
+    border: 1px solid green;
+}
+
+.popup-message-container.popup-message-negative {
+    background-color: pink;
+    border: 1px solid red;
+}

@@ -1,0 +1,96 @@
+{
+    "TherapyTypes": [
+        {
+            "key": "sfbt",
+            "title": "Solutions Focused Brief Therapy (SFBT)",
+            "description": [
+                "Suitable for majority of situations",
+                "Miracle question useful for goal setting or de-bogging client",
+                "Focus on “how” over “why” more effective for anxiety/stress",
+                "Particularly effective for limited sessions or unknown number of sessions"
+            ],
+            "points": [
+                "Miracle Question",
+                "Presupposing change questions",
+                "Exceptions to the problem",
+                "Scaling Questions",
+                "Coping questions",
+                "SMART+ Goals"
+            ]
+        },
+        {
+            "key": "cbt",
+            "title": "Cognitive Behavioural Therapy (CBT)",
+            "description": [
+                "Suitable in majority situations, such as; Depression, Anxiety (GAD / general stress), PTSD, OCD, Phobias, Marital issues",
+                "Well researched therapeutic model",
+                "Requires effective structuring and session planning"
+            ],
+            "points": [
+                "Journaling",
+                "Unravelling cognitive distortions",
+                "Cognitive restructuring",
+                "Exposure and response prevention",
+                "Interoceptive exposure",
+                "Play the script until the end",
+                "Progressive muscle relaxation",
+                "Relaxed breathing"
+            ]
+        },
+        {
+            "key": "narrative",
+            "title": "Narrative Therapy",
+            "description": [
+                "Effective for patients who don’t respond well to structured sessions",
+                "More fluid than SFBT/CBT/ACT but more directed than PCT",
+                "Use of “chapters” can also be used for coaching purposes"
+            ],
+            "points": [
+                "Externalise the problem via position mapping",
+                "Re-author conversations via including neglected aspects of selves and shifting to a problem centered narrative",
+                "Remembering conversations that actively engage the client in finding meaning in their story that is no longer problem saturated vs resilience rich"
+            ]
+        },
+        {
+            "key": "pct",
+            "title": "Person Centered Therapy (PCT)",
+            "description": [
+                "Effective for patients seeking to gain increased sense of confidence and identity",
+                "Often integrated with other research-based therapies",
+                "Most effective for self-directed patients"       
+            ],
+            "points": [
+                "Set clear boundaries",
+                "Remember the client knows best",
+                "Act as a sounding board",
+                "Don’t make decisions for your clients",
+                "Concentrate on what they are really saying",
+                "Be genuine",
+                "Accept negative emotions",
+                "How you speak can be more important than what you say",
+                "Open questions",
+                "Paraphrasing",
+                "Non-directivenes"
+            ]
+        },
+        {
+            "key": "act",
+            "title": "Acceptance Commitment Therapy (ACT)",
+            "description": [
+                "Derivative of CBT",
+                "Stronger focus on mindfulness",
+                "More effective comparatively for chronic pain and things outside of patient’s control",
+                "Aims to develop psychological flexibility",
+                "6 cores: Acceptance, Cognitive De-fusion, Being present, Self as context, Values, Committed action"
+            ],
+            "points": [
+                "Anchor breathing",
+                "Cognitive de-fusion from unhelpful thoughts",
+                "The struggle switches",
+                "Observing anxiety mindfully",
+                "Values clarification",
+                "Values-driven action planning"
+            ]
+        }
+    ]
+}

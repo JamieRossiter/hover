@@ -1,0 +1,39 @@
+/* ChatHoverMessageContainer.tsx */
+
+.chat-comment-container {
+    display: flex;
+    flex-direction: row;
+    animation: message-slide 0.1s;
+    margin-bottom: 1em;
+    width: 100%;
+}
+
+.chat-comment-comment-container {
+    margin-right: auto;
+    position: relative;
+    max-width: 350px;
+}
+
+.chat-comment-chat-container {
+    margin-right: auto;
+    width: 50%;
+}
+
+.chat-comment-chat-container-no-comment {
+    display: inline-block;
+    width: 100%;
+}
+
+.chat-comment-chat-container, .chat-comment-chat-container-no-comment {
+    margin-left: 5em;
+    margin-right: 5em;
+}
+
+@keyframes message-slide {
+    from { 
+        transform: translateY(50%); 
+    }
+    to { 
+        transform: translateY(0%);
+    }
+}

@@ -1,0 +1,5 @@
+author, role, dateSent, message, hoverComment, anxietyScore, depressionScore, riskFlag
+Jamie, patient, 2022-11-11T05:26:41.228Z, depressed, , 0.5, 2, false
+Jamie, patient, 2022-11-11T05:26:47.148Z, depressed, , 0.5, 2, false
+Jamie, patient, 2022-11-11T05:26:54.281Z, depressed, , 0.5, 2, false
+Jamie, patient, 2022-11-11T05:26:58.157Z, depressed, , 0.5, 2, false

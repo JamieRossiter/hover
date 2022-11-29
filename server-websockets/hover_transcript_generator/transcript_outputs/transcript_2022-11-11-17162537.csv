@@ -1,0 +1,22 @@
+author, role, dateSent, message, hoverComment, anxietyScore, depressionScore, riskFlag
+Jamie, patient, 2022-11-11T06:15:15.944Z, test, , 0, 0, false
+Jamie, patient, 2022-11-11T06:15:16.857Z, test, , 0, 0, false
+Jamie, patient, 2022-11-11T06:15:17.638Z, test, , 0, 0, false
+Jamie, patient, 2022-11-11T06:15:18.427Z, test, , 0, 0, false
+Jamie, patient, 2022-11-11T06:15:19.274Z, test, , 0, 0, false
+Jamie, patient, 2022-11-11T06:15:20.089Z, test, , 0, 0, false
+Jamie, patient, 2022-11-11T06:15:20.966Z, test, , 0, 0, false
+Jamie, patient, 2022-11-11T06:15:21.718Z, test, , 0, 0, false
+Jamie, patient, 2022-11-11T06:15:22.473Z, test, , 0, 0, false
+Jamie, patient, 2022-11-11T06:15:23.179Z, test, , 0, 0, false
+Jamie, patient, 2022-11-11T06:15:23.898Z, test, Client appears to be experiencing  levels of depression. Consider utilising  <a target="_blank" href=/therapeuticModel/nt>NT</a> to assist., 0, 0, false
+Jamie, patient, 2022-11-11T06:15:28.865Z, anxious, , 3.5, 0.5, false
+Jamie, patient, 2022-11-11T06:15:29.835Z, anxious, , 3.5, 0.5, false
+Jamie, patient, 2022-11-11T06:15:30.731Z, anxious, , 3.5, 0.5, false
+Jamie, patient, 2022-11-11T06:15:31.587Z, anxious, , 3.5, 0.5, false
+Jamie, patient, 2022-11-11T06:15:32.454Z, anxious, , 3.5, 0.5, false
+Jamie, patient, 2022-11-11T06:15:33.396Z, anxious, , 3.5, 0.5, false
+Jamie, patient, 2022-11-11T06:15:34.336Z, anxious, , 3.5, 0.5, false
+Jamie, patient, 2022-11-11T06:15:35.338Z, anxious, , 3.5, 0.5, false
+Jamie, patient, 2022-11-11T06:15:36.096Z, anxious, , 3.5, 0.5, false
+Jamie, patient, 2022-11-11T06:15:36.828Z, anxious, Client appears to be experiencing Very High levels of anxiety and Mild levels of depression. Consider utilising  <a target="_blank" href=/therapeuticModel/act>ACT</a> to assist., 3.5, 0.5, false

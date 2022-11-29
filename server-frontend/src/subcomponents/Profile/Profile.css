@@ -1,0 +1,39 @@
+/* Profile.tsx */
+
+.profile-container-sender, .profile-container-receiver {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.profile-container-sender {
+    margin-left: 1em;
+    flex-direction: row-reverse;
+}
+
+.profile-container-receiver {
+    margin-right: 1em;
+    flex-direction: row;
+}
+ 
+.profile-image {
+    height: 2.5em;
+    position: relative;
+}
+
+.profile-name-sender, .profile-name-receiver {
+    display: inline-block;
+    position: relative;
+    color: black;
+    font-size: 1.1em;
+    display: none;
+}
+
+.profile-name-sender {
+    right: 0.5em;
+    bottom: 0.8em;
+}
+
+.profile-name-receiver {
+    left: 0.5em;
+    bottom: 0.8em;
+}

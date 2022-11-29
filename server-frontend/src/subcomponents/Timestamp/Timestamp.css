@@ -1,0 +1,6 @@
+/* ChatMessageTimestamp.tsx */
+
+.timestamp-time {
+    color: lightgrey;
+    font-weight: bold;
+}

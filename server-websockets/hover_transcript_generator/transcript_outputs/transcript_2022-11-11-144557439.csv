@@ -1,0 +1,3 @@
+author, role, dateSent, message, hoverComment, anxietyScore, depressionScore, riskFlag
+Jamie, patient, 2022-11-11T03:45:35.318Z, depressed, Client appears to be experiencing  levels of depression. Consider utilising NT to assist. <a target="_blank" href=/therapeuticModel/nt>NT</a>., 0.5, 2, false
+Jamie, patient, 2022-11-11T03:45:40.213Z, depressed, Client appears to be experiencing Mild levels of anxiety and Very High levels of depression. Consider utilising NT to assist. <a target="_blank" href=/therapeuticModel/nt>NT</a>., 0.5, 2, false

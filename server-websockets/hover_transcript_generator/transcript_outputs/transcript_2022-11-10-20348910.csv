@@ -1,0 +1,14 @@
+author, role, dateSent, message, hoverComment, anxietyScore, depressionScore, riskFlag
+Jamie, patient, 2022-11-10T09:29:44.116Z, test, , 0, 0, false
+Jamie, patient, 2022-11-10T09:29:45.428Z, test, , 0, 0, false
+Jamie, patient, 2022-11-10T09:29:46.729Z, test, , 0, 0, false
+Jamie, patient, 2022-11-10T09:29:47.861Z, test, , 0, 0, false
+Jamie, patient, 2022-11-10T09:29:50.141Z, test, , 0, 0, false
+Jamie, patient, 2022-11-10T09:30:01.246Z, test, , 0, 0, false
+Jamie, patient, 2022-11-10T09:30:14.687Z, test, , 0, 0, false
+Jamie, patient, 2022-11-10T09:30:15.821Z, test, Patient is typing 85.57% faster than normal., 5, 0, false
+Jamie, patient, 2022-11-10T09:30:16.977Z, test, Client appears to be experiencing Medium levels of anxiety and  levels of depression. Consider utilising SFBT to assist. <a target="_blank" href=/therapeuticModel/sfbt>SFBT</a>., 0, 0, false
+Jamie, patient, 2022-11-10T09:30:18.380Z, test, , 0, 0, false
+Jamie, patient, 2022-11-10T09:30:19.520Z, test, , 0, 0, false
+Jamie, patient, 2022-11-10T09:31:31.122Z, test, Client appears to be experiencing Mild levels of anxiety and  levels of depression. Consider utilising NT to assist. <a target="_blank" href=/therapeuticModel/nt>NT</a>., 0, 0, false
+Jamie, patient, 2022-11-10T09:31:51.620Z, test, Client appears to be experiencing Mild levels of anxiety and  levels of depression. Consider utilising NT to assist. <a target="_blank" href=/therapeuticModel/nt>NT</a>., 0, 0, false

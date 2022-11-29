@@ -1,0 +1,14 @@
+author, role, dateSent, message, hoverComment, anxietyScore, depressionScore, riskFlag
+Jamie, patient, 2022-11-11T03:20:03.440Z, test, , 0, 0, false
+Jamie, patient, 2022-11-11T03:20:06.300Z, test, , 0, 0, false
+Jamie, patient, 2022-11-11T03:20:08.042Z, test, , 0, 0, false
+Jamie, patient, 2022-11-11T03:20:09.671Z, test, , 0, 0, false
+Jamie, patient, 2022-11-11T03:20:11.219Z, test, , 0, 0, false
+Jamie, patient, 2022-11-11T03:20:12.572Z, test, , 0, 0, false
+Jamie, patient, 2022-11-11T03:20:13.901Z, test, , 0, 0, false
+Jamie, patient, 2022-11-11T03:20:15.279Z, test, , 0, 0, false
+Jamie, patient, 2022-11-11T03:20:16.458Z, test, , 0, 0, false
+Jamie, patient, 2022-11-11T03:20:17.703Z, test, , 0, 0, false
+Jamie, patient, 2022-11-11T03:20:19.175Z, test, , 0, 0, false
+Jamie, patient, 2022-11-11T03:20:53.033Z, test, Client appears to be experiencing  levels of depression. Consider utilising NT to assist. <a target="_blank" href=/therapeuticModel/nt>NT</a>., 0, 0, false
+Jamie, patient, 2022-11-11T03:20:58.164Z, test, Client appears to be experiencing  levels of depression. Consider utilising NT to assist. <a target="_blank" href=/therapeuticModel/nt>NT</a>., 0, 0, false

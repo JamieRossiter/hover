@@ -1,0 +1,4 @@
+author, role, dateSent, message, hoverComment, anxietyScore, depressionScore, riskFlag
+mattdixon, facilitator, 2022-11-15T08:56:55.422Z, Hi Jamie  how are you tday?, , 0, 0, false
+jamierossiter, patient, 2022-11-15T08:57:06.250Z, Hi Matt  i'm good thanks. sdfsf, , 0, 0, false
+jamierossiter, patient, 2022-11-15T08:57:10.063Z, sdfsdf, Patient wrote message with 0% correctness. Client may be showing signs of intoxication and/or depression, 0, 0, false
