@@ -1,7 +1,8 @@
 import { Repetition } from "../types/RepetitionInterface/RepetitionInterface";
 import { removeStopwords } from "../hover_message_diagnosis/message_diagnosis/message-diagnosis"
+import { RepetitionAcrossMessages } from "../types/RepetitionAcrossMessagesType/RepetitionAcrossMessages";
 
-export function analyseRepetition(message: string): Repetition {
+export function analyseRepetition(message: string, prevMessages: Array<string>): Repetition {
 
     // const words: Array<string> = message.split(" ");
     const phrases: Array<string> = analysePhraseRepetition(message);
@@ -28,7 +29,38 @@ export function analyseRepetition(message: string): Repetition {
         if(repetition[key] <= 1) delete repetition[key]; // Delete entries that have not been counted more than once
     })
 
+    analyseRepetitionAcrossMessages(prevMessages, message);
+
     return repetition;
+
+}
+
+function analyseRepetitionAcrossMessages(prevMessages: Array<string>, currMessage: string): any {
+
+    // NOTE: By not passing this through getPhrases(), we are inherently analysing repetition of single words, not phrases.
+    // Like the standard repetition analysis function above, this means single words can be ignored sometimes. 
+    // We may be able to implement both single word AND phrase repetition analysis. Need to investigate.
+    const analysedCurr: Array<string> = getPhrases(removeStopwords(removePunctuation(currMessage).split(" "))); 
+    const analysedPrevs: Array<string> = prevMessages.map((prev: string) => removePunctuation(prev));
+    let regex: RegExp;
+
+    let matches: Array<[string, string]> = [];
+    console.log("Analysed Curr", analysedCurr);
+
+    analysedPrevs.filter((prevs: string) => {
+
+        analysedCurr.forEach((curr: string, index: number) => {
+
+            regex = new RegExp(curr, "gi");
+            // if(prevs.match(regex)) matches.push(prevs); // NOTE: Do we want to focus more on the message/message information where the repetition was located?
+            // if(prevs.match(regex)) matches.push(curr); // NOTE: Or do we want to focus more on the word being repeated?
+            if(prevs.match(regex)) matches.push([curr, prevs]) // NOTE: Por que los nos dos? Return this value, or an object with "repeated word" and "original message" or "original message index"?
+
+        })
+
+    })
+
+    console.log(matches);
 
 }
 
@@ -58,6 +90,8 @@ function analysePhraseRepetition(message: string): Array<string> {
                 }
             }
         }
+
+        console.log("Phrase to Analyse", phraseToAnalyse);
 
     })
 
@@ -89,7 +123,27 @@ function analysePhraseRepetition(message: string): Array<string> {
     return filteredSignificantMatches;
 }
 
+function getPhrases(tokenizedMessage: Array<string>){
+    
+    let phrases: Array<string> = [];
+    tokenizedMessage.forEach((word: string, index: number) => {
+
+        let currPhrase: string = "";
+        currPhrase = word;
+
+        for(let i = index + 1; i < tokenizedMessage.length; i++){
+           currPhrase += " " + tokenizedMessage[i];
+        }
+
+        phrases.push(currPhrase);
+
+    }) 
+
+    return phrases;
+
+}
+
 function removePunctuation(message: string): string {
-    const replaceRegex: RegExp = /[.,\/#!$%\^&\*;:{}=\-_`~()]/g;
+    const replaceRegex: RegExp = /[.,\/#!$%\^&\*;?:{}=\-_`~()]/g;
     return message.replace(replaceRegex, "");
 }

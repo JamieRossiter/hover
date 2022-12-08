@@ -18,7 +18,6 @@ const DetectTypingSpeed_1 = require("./hover_detect_typing_speed/DetectTypingSpe
 const GenerateHoverMessage_1 = require("./hover_generate_hover_message/GenerateHoverMessage");
 require("dotenv").config();
 const USER_DATA_URI = "localhost";
-// const USER_DATA_URI: string = "https://server-hover-userdata.herokuapp.com/"
 const MAX_CLIENTS = 2;
 const WEBSOCKETS_PORT = 9000;
 const server = new ws_1.WebSocketServer({ port: process.env.PORT || WEBSOCKETS_PORT });
@@ -279,7 +278,7 @@ function processChatMessage(message, client) {
         }
     }
     const currentDate = new Date();
-    const diagnosis = (0, message_diagnosis_1.createMessageDiagnosis)(message);
+    const diagnosis = (0, message_diagnosis_1.createMessageDiagnosis)(message, getAllMessagesSentByUser(client.id));
     // console.log("Raw Diagnosis Score", diagnosis.score);
     // If there is more than 5 messages sent by a user, calculate characters per second between most recently sent message and current message
     const userMessageHistory = messageHistory.filter((msg) => {
@@ -402,5 +401,13 @@ function performSaveData(saveData) {
     });
     req.write(JSON.stringify(saveData));
     req.end();
+}
+function getAllMessagesSentByUser(user) {
+    return messageHistory.map((msg) => {
+        const content = JSON.parse(JSON.parse(msg).content);
+        if (user !== content.author.id)
+            return "";
+        return JSON.parse(JSON.parse(msg).content).message;
+    });
 }
 console.log(`Hover Server v1.0 is running on port ${WEBSOCKETS_PORT}`);

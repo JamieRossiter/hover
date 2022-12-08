@@ -35,7 +35,7 @@ function createWordListFromFile(filePath: string): Array<string> {
 }
 
 // Analyse the message and return a "Diagnosis" object
-export function createMessageDiagnosis(message: string):  Diagnosis {
+export function createMessageDiagnosis(message: string, prevMessages: Array<string>):  Diagnosis {
 
      // List of words extracted from external text files containing categories of words
     const externalWordList: Array<WordListItem> = createWordRatingListFromDictionaryJson();
@@ -56,7 +56,7 @@ export function createMessageDiagnosis(message: string):  Diagnosis {
     return {
         analysedMessage: message,
         keywords: finalisedTokens,
-        repetition: analyseRepetition(message),
+        repetition: analyseRepetition(message, prevMessages),
         score: calculateMessageScore(finalisedTokens),
         correctness: parseFloat(stringCorrectness(message))
     };
