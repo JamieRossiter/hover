@@ -28,7 +28,8 @@ function analyseRepetition(message, prevMessages) {
 exports.analyseRepetition = analyseRepetition;
 function analyseRepetitionAcrossMessages(prevMessages, currMessage) {
     // NOTE: By not passing this through getPhrases(), we are inherently analysing repetition of single words, not phrases.
-    // Like the standard repetition analysis function above, this means single words can be ignored sometimes.
+    // Like the standard repetition analysis function above, this means single words can be ignored sometimes. 
+    // We may be able to implement both single word AND phrase repetition analysis. Need to investigate.
     const analysedCurr = getPhrases((0, message_diagnosis_1.removeStopwords)(removePunctuation(currMessage).split(" ")));
     const analysedPrevs = prevMessages.map((prev) => removePunctuation(prev));
     let regex;
@@ -40,7 +41,7 @@ function analyseRepetitionAcrossMessages(prevMessages, currMessage) {
             // if(prevs.match(regex)) matches.push(prevs); // NOTE: Do we want to focus more on the message/message information where the repetition was located?
             // if(prevs.match(regex)) matches.push(curr); // NOTE: Or do we want to focus more on the word being repeated?
             if (prevs.match(regex))
-                matches.push([curr, prevs]); // NOTE: Por que los nos dos?
+                matches.push([curr, prevs]); // NOTE: Por que los nos dos? Return this value, or an object with "repeated word" and "original message" or "original message index"?
         });
     });
     console.log(matches);

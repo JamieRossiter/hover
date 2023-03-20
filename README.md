@@ -1,6 +1,4 @@
-# Hover
-
-<div style="text-align: center;">
+<div align="center">
 	<img src="./img/hover_logo.png" alt="Hover Logo">
 </div>
 
@@ -14,13 +12,13 @@ This is a mock chat application for showcasing the capabilities of Hover, built 
 
 ### Technologies
 
-<div style="display: flex; flex-direction: row; justify-content: space-evenly">
-  <img src="./img/react_logo.png" alt="React Logo">
-  <img src="./img/node_logo.png" alt="Node Logo">
-</div>
-
 - ReactJS
 - NodeJS
 - WebSockets
 - PostgreSQL
 - Microsoft Azure Blob Storage
+
+### Example
+
+<img src="./img/example.png">
+

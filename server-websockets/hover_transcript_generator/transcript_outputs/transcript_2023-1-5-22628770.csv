@@ -1,0 +1,5 @@
+author, role, dateSent, message, hoverComment, anxietyScore, depressionScore, riskFlag
+Jamie Rossiter, facilitator, 2023-01-05T11:05:19.529Z, Hi Devon  how are you today?, , 0, 0, false
+Devon Markram, patient, 2023-01-05T11:06:01.483Z, Something has happened today that has made me quite anxious., , 0, 0, false
+Devon Markram, patient, 2023-01-05T11:06:07.609Z, I am scared, , 0, 0, false
+Devon Markram, patient, 2023-01-05T11:06:22.124Z, I am afraid, , 3, 1.5, false
