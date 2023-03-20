@@ -1,0 +1,7 @@
+author, role, dateSent, message, hoverComment, anxietyScore, depressionScore, riskFlag
+Jamie Rossiter, facilitator, 2023-01-05T11:07:09.436Z, Hi Devon  how are you feeling?, , 0, 0, false
+Devon Markram, patient, 2023-01-05T11:07:20.538Z, Not great. I am very afraid for my wellbeing right now..., , 3, 1.5, false
+Jamie Rossiter, facilitator, 2023-01-05T11:08:40.917Z, You're afraid for your wellbeing... how so?, , 3, 1.5, false
+Devon Markram, patient, 2023-01-05T11:08:57.057Z, I keep having dark thoughts. Sometimes I think about killing myself., , 1.5, 1.5, false
+Jamie Rossiter, facilitator, 2023-01-05T11:14:19.106Z, Why exactly do you feel that way?, , 0, 0, false
+Devon Markram, patient, 2023-01-05T11:16:34.300Z, My partner is extremely abusive towards me., Client appears to be experiencing Very High levels of anxiety and Very High levels of depression. Consider utilising  <a target="_blank" href=/therapeuticModel/cbt>CBT</a> to assist., 3.5, 3, true

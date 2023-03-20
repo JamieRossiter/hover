@@ -17,7 +17,7 @@ import ScrollToStartButton from "../../subcomponents/ScrollToStartButton/ScrollT
 
 function ChatHoverSuperwindow(){
 
-    const CHAT_SERVER_URI: string | undefined = "172.20.10.11:9000";
+    const CHAT_SERVER_URI: string | undefined = "localhost:9000";
     const WEBSOCKETS_PROTOCOL: string | undefined = "ws";
 
     const [query] = useSearchParams(); // name, email, role

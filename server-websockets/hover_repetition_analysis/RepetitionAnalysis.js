@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.analyseRepetition = void 0;
 const message_diagnosis_1 = require("../hover_message_diagnosis/message_diagnosis/message-diagnosis");
-function analyseRepetition(message) {
+function analyseRepetition(message, prevMessages) {
     // const words: Array<string> = message.split(" ");
     const phrases = analysePhraseRepetition(message);
     let repetition = {};
@@ -22,9 +22,30 @@ function analyseRepetition(message) {
         if (repetition[key] <= 1)
             delete repetition[key]; // Delete entries that have not been counted more than once
     });
+    analyseRepetitionAcrossMessages(prevMessages, message);
     return repetition;
 }
 exports.analyseRepetition = analyseRepetition;
+function analyseRepetitionAcrossMessages(prevMessages, currMessage) {
+    // NOTE: By not passing this through getPhrases(), we are inherently analysing repetition of single words, not phrases.
+    // Like the standard repetition analysis function above, this means single words can be ignored sometimes. 
+    // We may be able to implement both single word AND phrase repetition analysis. Need to investigate.
+    const analysedCurr = getPhrases((0, message_diagnosis_1.removeStopwords)(removePunctuation(currMessage).split(" ")));
+    const analysedPrevs = prevMessages.map((prev) => removePunctuation(prev));
+    let regex;
+    let matches = [];
+    console.log("Analysed Curr", analysedCurr);
+    analysedPrevs.filter((prevs) => {
+        analysedCurr.forEach((curr, index) => {
+            regex = new RegExp(curr, "gi");
+            // if(prevs.match(regex)) matches.push(prevs); // NOTE: Do we want to focus more on the message/message information where the repetition was located?
+            // if(prevs.match(regex)) matches.push(curr); // NOTE: Or do we want to focus more on the word being repeated?
+            if (prevs.match(regex))
+                matches.push([curr, prevs]); // NOTE: Por que los nos dos? Return this value, or an object with "repeated word" and "original message" or "original message index"?
+        });
+    });
+    console.log(matches);
+}
 function analysePhraseRepetition(message) {
     const splitMessage = removePunctuation(message).split(" ");
     const splitMessageNoStopwords = (0, message_diagnosis_1.removeStopwords)(splitMessage);
@@ -45,6 +66,7 @@ function analysePhraseRepetition(message) {
                 }
             }
         }
+        console.log("Phrase to Analyse", phraseToAnalyse);
     });
     // Sort matches in a descending fashion based on their length. Longer phrases are more significant than shorter phrases.
     const ascendingSignificantMatches = Array.from(significantMatches).sort((a, b) => {
@@ -70,7 +92,19 @@ function analysePhraseRepetition(message) {
     });
     return filteredSignificantMatches;
 }
+function getPhrases(tokenizedMessage) {
+    let phrases = [];
+    tokenizedMessage.forEach((word, index) => {
+        let currPhrase = "";
+        currPhrase = word;
+        for (let i = index + 1; i < tokenizedMessage.length; i++) {
+            currPhrase += " " + tokenizedMessage[i];
+        }
+        phrases.push(currPhrase);
+    });
+    return phrases;
+}
 function removePunctuation(message) {
-    const replaceRegex = /[.,\/#!$%\^&\*;:{}=\-_`~()]/g;
+    const replaceRegex = /[.,\/#!$%\^&\*;?:{}=\-_`~()]/g;
     return message.replace(replaceRegex, "");
 }

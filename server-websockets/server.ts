@@ -27,7 +27,6 @@ import { HoverMessage } from "./types/HoverMessageType/HoverMessageType";
 require("dotenv").config();
 
 const USER_DATA_URI: string = "localhost";
-// const USER_DATA_URI: string = "https://server-hover-userdata.herokuapp.com/"
 const MAX_CLIENTS: number = 2;
 const WEBSOCKETS_PORT: number = 9000;
 const server: WebSocketServer = new WebSocketServer({ port: process.env.PORT as any || WEBSOCKETS_PORT });
@@ -337,9 +336,6 @@ function processOtherUserDisconnectMessage(message: string): string {
     return JSON.stringify({ type: "otherUserDisconnectMessage", content: message });
 }
 
-
-
-
 function processChatMessage(message: string, client: ClientProfile) : string {    
     // Get score for last session
     var previous_score: Score = {
@@ -370,7 +366,8 @@ function processChatMessage(message: string, client: ClientProfile) : string {
 
     const currentDate: Date = new Date();
 
-    const diagnosis: Diagnosis = createMessageDiagnosis(message);
+    const diagnosis: Diagnosis = createMessageDiagnosis(message, getAllMessagesSentByUser(client.id));
+
     // console.log("Raw Diagnosis Score", diagnosis.score);
 
     // If there is more than 5 messages sent by a user, calculate characters per second between most recently sent message and current message
@@ -524,6 +521,17 @@ function performSaveData(saveData: { facilitatorEmail: string, patientEmail: str
     req.write(JSON.stringify(saveData));
     req.end();
     
+}
+
+function getAllMessagesSentByUser(user: string): Array<string> {
+
+    return messageHistory.map((msg: string) => {
+        const content: ChatMessageContent = JSON.parse(JSON.parse(msg).content)
+        if(user !== content.author.id) return "";
+        return JSON.parse(JSON.parse(msg).content).message
+    }) 
+    
+
 }
 
 console.log(`Hover Server v1.0 is running on port ${WEBSOCKETS_PORT}`);

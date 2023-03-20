@@ -47,7 +47,7 @@ function createWordListFromFile(filePath) {
     return list;
 }
 // Analyse the message and return a "Diagnosis" object
-function createMessageDiagnosis(message) {
+function createMessageDiagnosis(message, prevMessages) {
     // List of words extracted from external text files containing categories of words
     const externalWordList = createWordRatingListFromDictionaryJson();
     // console.log("External Word List", externalWordList);
@@ -62,7 +62,7 @@ function createMessageDiagnosis(message) {
     return {
         analysedMessage: message,
         keywords: finalisedTokens,
-        repetition: (0, RepetitionAnalysis_1.analyseRepetition)(message),
+        repetition: (0, RepetitionAnalysis_1.analyseRepetition)(message, prevMessages),
         score: calculateMessageScore(finalisedTokens),
         correctness: parseFloat((0, string_correctness_1.stringCorrectness)(message))
     };
