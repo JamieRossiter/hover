@@ -1,7 +1,7 @@
 import http = require("http");
 // import mysql = require("mysql2");
 const { Pool } = require("pg");
-import { ServerResponse } from "./ServerResponseType";
+import { ServerResponse } from "./types/ServerResponseType/ServerResponseType";
 import { v4 as uuidv4 } from "uuid";
 
 const port: number = 5050;
